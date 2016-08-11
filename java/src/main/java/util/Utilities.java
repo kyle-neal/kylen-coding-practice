@@ -12,8 +12,12 @@ public class Utilities {
         return arr;
     }
 
-    private static int randomNumber() {
+    public static int randomNumber() {
+        return randomNumber(50);
+    }
+
+    public static int randomNumber(int max) {
         Random rand = new Random();
-        return rand.nextInt(50) + 1;
+        return rand.nextInt(max) + 1;
     }
 }

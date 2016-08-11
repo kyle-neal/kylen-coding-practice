@@ -8,7 +8,8 @@ public class Driver {
     public static void main(String[] args) {
         Problem problems[] = {
                 null, // Using index of 1-8
-                new Problem1()
+                new Problem1(),
+                new Problem2()
         };
         do {
             printMenu();
@@ -44,6 +45,7 @@ public class Driver {
     private static void printMenu() {
         System.out.println("---------------MENU---------------");
         System.out.println("| 1) Max Profit Stock Solver     |");
+        System.out.println("| 2) Rotate array                |");
         System.out.println("|                                |");
         System.out.println("| q || quit) To Quit             |");
         System.out.println("----------------------------------");
