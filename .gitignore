@@ -1,3 +1,4 @@
 java/build/*
 *.iml
 .idea/*
+java/.gradle/*
