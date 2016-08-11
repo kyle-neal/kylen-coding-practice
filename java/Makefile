@@ -1,6 +1,9 @@
 gradle-build:
 	gradle build
 
+test:
+	gradle test
+
 run:
 	java -jar build/libs/kylen-coding-practice.jar
 
