@@ -16,13 +16,14 @@ get_max_profit(stock_prices_yesterday)
 
 package main.java.problems;
 
-import java.util.Scanner;
-import java.util.Random;
+import main.java.util.*;
 
-public class Problem1 extends Problem{
+import java.util.Scanner;
+
+public class Problem1 extends Problem {
     public void solve() {
-        int[] stockPrices = generate_stock_prices(get_array_size());
-        int maxProfit = get_max_profit(stockPrices);
+        int[] stockPrices = Utilities.createArray(getArraySize());
+        int maxProfit = getMaxProfit(stockPrices);
         System.out.print("Max profit given:\n[ ");
         for (int i :
                 stockPrices) {
@@ -31,7 +32,7 @@ public class Problem1 extends Problem{
         System.out.println("]\nis -> " + maxProfit);
     }
 
-    private static int get_array_size() {
+    private static int getArraySize() {
         System.out.println("Enter a positive integer representing the number of time slots.");
         do {
             Scanner in = new Scanner(System.in);
@@ -50,28 +51,15 @@ public class Problem1 extends Problem{
         } while (true);
     }
 
-    private static int[] generate_stock_prices(int size) {
-        int[] stock_prices_yesterday = new int[size];
-        for(int i = 0; i < size; i++){
-            stock_prices_yesterday[i] = random_number();
-        }
-        return stock_prices_yesterday;
-    }
-
-    private static int random_number() {
-        Random rand = new Random();
-        return rand.nextInt(50) + 1;
-    }
-
-    private static int get_max_profit(int[] stock_prices_yesterday) {
+    private static int getMaxProfit(int[] stock_prices_yesterday) {
         int bought = stock_prices_yesterday[0];
         int maxProfit = 0;
         for (int i = 1; i < stock_prices_yesterday.length; i++) {
             int profit = stock_prices_yesterday[i] - bought;
-            if (profit > maxProfit){
+            if (profit > maxProfit) {
                 maxProfit = profit;
             }
-            if(bought > stock_prices_yesterday[i]){
+            if (bought > stock_prices_yesterday[i]) {
                 bought = stock_prices_yesterday[i];
             }
         }

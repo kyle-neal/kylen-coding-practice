@@ -11,13 +11,13 @@ public class Driver {
                 new Problem1()
         };
         do {
-            print_menu();
-            int choice = get_choice(problems.length - 1);
+            printMenu();
+            int choice = getChoice(problems.length - 1);
             problems[choice].solve();
         } while (true);
     }
 
-    private static int get_choice(int max) {
+    private static int getChoice(int max) {
         do {
             System.out.print("kylen-java-practice> ");
             Scanner sc = new Scanner(System.in);
@@ -41,7 +41,7 @@ public class Driver {
         } while (true);
     }
 
-    private static void print_menu() {
+    private static void printMenu() {
         System.out.println("---------------MENU---------------");
         System.out.println("| 1) Max Profit Stock Solver     |");
         System.out.println("|                                |");
