@@ -1,5 +1,7 @@
 apply plugin: 'java'
 
+archivesBaseName = 'kylen-coding-practice'
+
 jar {
     manifest {
         attributes 'Main-Class': 'main.java.Driver'
