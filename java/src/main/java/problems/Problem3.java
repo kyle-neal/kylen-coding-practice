@@ -53,7 +53,7 @@ public class Problem3 extends Problem {
 
     }
 
-    private boolean isBalanced(String str) {
+    public static boolean isBalanced(String str) {
         Stack<Character> s = new Stack<>();
         Map<Character, Character> m = new HashMap<>();
         m.put(')', '(');

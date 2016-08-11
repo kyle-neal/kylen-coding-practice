@@ -46,5 +46,4 @@ public class Problem2Tests {
         int n = 3;
         assertArrayEquals(expected, Problem2.rotate(arr, n));
     }
-
 }
