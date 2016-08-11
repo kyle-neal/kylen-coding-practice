@@ -20,6 +20,7 @@ import main.java.util.Utilities;
 
 
 public class Problem2 extends Problem {
+    @Override
     public void solve() {
         int size = Utilities.randomNumber(10);
         int n = Utilities.randomNumber(20);
@@ -37,11 +38,11 @@ public class Problem2 extends Problem {
         System.out.println("]");
     }
 
-    private int[] rotate(int[] arr, int n){
-        for (int x = 0; x < n; x++){
+    private int[] rotate(int[] arr, int n) {
+        for (int x = 0; x < n; x++) {
             int previous = arr[0];
             arr[0] = arr[arr.length - 1];
-            for(int y = 1; y < arr.length; y++){
+            for (int y = 1; y < arr.length; y++) {
                 int pre = arr[y];
                 arr[y] = previous;
                 previous = pre;

@@ -21,6 +21,7 @@ import main.java.util.*;
 import java.util.Scanner;
 
 public class Problem1 extends Problem {
+    @Override
     public void solve() {
         int[] stockPrices = Utilities.createArray(getArraySize());
         int maxProfit = getMaxProfit(stockPrices);
