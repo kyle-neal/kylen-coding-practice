@@ -20,6 +20,7 @@ import main.java.util.Utilities;
 
 
 public class Problem2 extends Problem {
+    //APUI
     @Override
     public void solve() {
         int size = Utilities.randomNumber(10);
@@ -38,7 +39,7 @@ public class Problem2 extends Problem {
         System.out.println("]");
     }
 
-    private int[] rotate(int[] arr, int n) {
+    public static int[] rotate(int[] arr, int n) {
         for (int x = 0; x < n; x++) {
             int previous = arr[0];
             arr[0] = arr[arr.length - 1];

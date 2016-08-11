@@ -36,7 +36,7 @@ public class Problem8 extends Problem {
     }
 
     //Solved in n^2 time
-    public boolean hasEvenMovieTimesv1(int flightTime, int[] movies) {
+    public static boolean hasEvenMovieTimesv1(int flightTime, int[] movies) {
         for (int i = 0; i < movies.length; i++) {
             for (int j = 0; j < movies.length; j++) {
                 if (movies[i] + movies[j] == flightTime && j != i)
@@ -47,7 +47,7 @@ public class Problem8 extends Problem {
     }
 
     // Solved in n time
-    public boolean hasEvenMovieTimesv2(int flightTime, int[] movies) {
+    public static boolean hasEvenMovieTimesv2(int flightTime, int[] movies) {
         Set<Integer> s = new HashSet<>();
         for (int firstMovie : movies) {
             int secondMovieTime = flightTime - firstMovie;

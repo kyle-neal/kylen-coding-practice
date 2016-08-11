@@ -21,6 +21,7 @@ import main.java.util.*;
 import java.util.Scanner;
 
 public class Problem1 extends Problem {
+    // API
     @Override
     public void solve() {
         int[] stockPrices = Utilities.createArray(getArraySize());
@@ -33,6 +34,22 @@ public class Problem1 extends Problem {
         System.out.println("]\nis -> " + maxProfit);
     }
 
+    public static int getMaxProfit(int[] stock_prices_yesterday) {
+        int bought = stock_prices_yesterday[0];
+        int maxProfit = 0;
+        for (int i = 1; i < stock_prices_yesterday.length; i++) {
+            int profit = stock_prices_yesterday[i] - bought;
+            if (profit > maxProfit) {
+                maxProfit = profit;
+            }
+            if (bought > stock_prices_yesterday[i]) {
+                bought = stock_prices_yesterday[i];
+            }
+        }
+        return maxProfit;
+    }
+
+    // Private Functions
     private static int getArraySize() {
         System.out.println("Enter a positive integer representing the number of time slots.");
         do {
@@ -50,20 +67,5 @@ public class Problem1 extends Problem {
                 System.out.println("Sorry, couldn't understand you!");
             }
         } while (true);
-    }
-
-    private static int getMaxProfit(int[] stock_prices_yesterday) {
-        int bought = stock_prices_yesterday[0];
-        int maxProfit = 0;
-        for (int i = 1; i < stock_prices_yesterday.length; i++) {
-            int profit = stock_prices_yesterday[i] - bought;
-            if (profit > maxProfit) {
-                maxProfit = profit;
-            }
-            if (bought > stock_prices_yesterday[i]) {
-                bought = stock_prices_yesterday[i];
-            }
-        }
-        return maxProfit;
     }
 }
