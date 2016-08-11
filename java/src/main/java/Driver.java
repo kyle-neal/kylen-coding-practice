@@ -10,7 +10,11 @@ public class Driver {
                 null, // Using index of 1-8
                 new Problem1(),
                 new Problem2(),
-                new Problem3()
+                new Problem3(),
+                new Problem4(),
+                new Problem5(),
+                new Problem6(),
+                new Problem7()
         };
         do {
             printMenu();
@@ -48,6 +52,10 @@ public class Driver {
         System.out.println("| 1) Max Profit Stock Solver     |");
         System.out.println("| 2) Rotate Array                |");
         System.out.println("| 3) Balanced Delimiters         |");
+        System.out.println("| 4) Count BST                   |");
+        System.out.println("| 5) BST Height                  |");
+        System.out.println("| 6) Possible Change Solutions   |");
+        System.out.println("| 7) Factorials                  |");
         System.out.println("|                                |");
         System.out.println("| q || quit) To Quit             |");
         System.out.println("----------------------------------");

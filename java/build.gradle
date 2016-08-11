@@ -2,6 +2,16 @@ apply plugin: 'java'
 
 archivesBaseName = 'kylen-coding-practice'
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "junit:junit:4.11"
+}
+
+
 jar {
     manifest {
         attributes 'Main-Class': 'main.java.Driver'
