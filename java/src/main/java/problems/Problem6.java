@@ -67,7 +67,7 @@ public class Problem6 extends Problem {
     }
 
     // @todo recursive style is no worky :(
-    private static int count(int n, int sum, int index, int[] arr) {
+    public static int count(int n, int sum, int index, int[] arr) {
         if (index < 0) return 0;
         else if (sum % n == 0 && sum != 0) return 1 + count(n, 0, index - 1, arr);
         else if (sum == 0) return count(n, sum + arr[index], index, arr);
