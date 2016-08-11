@@ -9,7 +9,8 @@ public class Driver {
         Problem problems[] = {
                 null, // Using index of 1-8
                 new Problem1(),
-                new Problem2()
+                new Problem2(),
+                new Problem3()
         };
         do {
             printMenu();
@@ -45,7 +46,8 @@ public class Driver {
     private static void printMenu() {
         System.out.println("---------------MENU---------------");
         System.out.println("| 1) Max Profit Stock Solver     |");
-        System.out.println("| 2) Rotate array                |");
+        System.out.println("| 2) Rotate Array                |");
+        System.out.println("| 3) Balanced Delimiters         |");
         System.out.println("|                                |");
         System.out.println("| q || quit) To Quit             |");
         System.out.println("----------------------------------");
