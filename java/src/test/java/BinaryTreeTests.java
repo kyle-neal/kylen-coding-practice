@@ -1,9 +1,8 @@
 package test.java;
 
 import static org.junit.Assert.*;
-
-import main.java.util.BinaryTree;
 import org.junit.*;
+import main.java.util.BinaryTree;
 
 public class BinaryTreeTests {
     //Tests
