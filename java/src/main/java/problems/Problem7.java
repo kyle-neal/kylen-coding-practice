@@ -32,7 +32,7 @@ public class Problem7 extends Problem {
         System.out.println("Factorial iterative given " + n + " is " + factRecursive(n));
     }
 
-    private int factIterative(int n) {
+    public static int factIterative(int n) {
         int product = n;
         for (int i = n - 1; i >= 1; i--)
             product = product * i;
@@ -40,8 +40,8 @@ public class Problem7 extends Problem {
     }
 
 
-    private int factRecursive(int n){
-        if(n == 1) return n;
+    public static int factRecursive(int n) {
+        if (n == 1) return n;
         else return n * factRecursive(n - 1);
     }
 }
