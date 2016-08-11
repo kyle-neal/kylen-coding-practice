@@ -7,14 +7,15 @@ import main.java.problems.*;
 public class Driver {
     public static void main(String[] args) {
         Problem problems[] = {
-                null, // Using index of 1-8
+                null,
                 new Problem1(),
                 new Problem2(),
                 new Problem3(),
                 new Problem4(),
                 new Problem5(),
                 new Problem6(),
-                new Problem7()
+                new Problem7(),
+                new Problem8()
         };
         do {
             printMenu();
@@ -56,6 +57,7 @@ public class Driver {
         System.out.println("| 5) BST Height                  |");
         System.out.println("| 6) Possible Change Solutions   |");
         System.out.println("| 7) Factorials                  |");
+        System.out.println("| 8) In-Flight Entertainment     |");
         System.out.println("|                                |");
         System.out.println("| q || quit) To Quit             |");
         System.out.println("----------------------------------");
