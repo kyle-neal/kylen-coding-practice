@@ -26,7 +26,7 @@ Problem problems[] = {
 3. Add it as an option in the menu
  
   ```
-private static void print_menu() {
+private static void printMenu() {
     System.out.println("---------------MENU---------------");
     System.out.println("| 1) Max Profit Stock Solver     |");
     System.out.println("|                                |");
