@@ -1,6 +1,7 @@
 package test.java;
 
 import static org.junit.Assert.*;
+
 import org.junit.*;
 import main.java.util.BinaryTree;
 
