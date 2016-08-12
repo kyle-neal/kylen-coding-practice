@@ -16,7 +16,8 @@ public class Driver {
                 new Problem6(),
                 new Problem7(),
                 new Problem8(),
-                new Problem9()
+                new Problem9(),
+                new Problem10()
         };
         do {
             printMenu();
@@ -60,6 +61,7 @@ public class Driver {
         System.out.println("| 7) Factorials                  |");
         System.out.println("| 8) In-Flight Entertainment     |");
         System.out.println("| 9) Ransom Note                 |");
+        System.out.println("| 10) Random Linked List Node    |");
         System.out.println("|                                |");
         System.out.println("| q || quit) To Quit             |");
         System.out.println("----------------------------------");
